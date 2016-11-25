@@ -8,3 +8,11 @@ from gameunit import *
 Метод attack должен получать атрибут target и уменьшать его здоровье на величину атаки.
 
 """
+class Hero(Attacker):
+    _name = ""
+    #target = ""
+    _health = 100
+    _attack = 50
+    _experience = 0
+    def __init__(self, _name):
+        self._name = _name
